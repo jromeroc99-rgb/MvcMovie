@@ -8,6 +8,8 @@ builder.Services.AddDbContext<MvcMovieContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Add validation services to the container.
+builder.Services.AddValidation();
 
 var app = builder.Build();
 app.UseRequestLocalization("en-US", "fr-FR");
